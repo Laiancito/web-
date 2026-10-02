@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-color: #0f172a
+}
+
+.nav {
+    background-color: #363636;
+    padding: 3px;
+}
+
+.imagen__web {
+    border-radius: 10px;
+    width: 70px;
+
+}
+.nav__lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    list-style-type:none;
+}
+
+
+.nav__item {
+    padding: 10px;
+    background-color: #555454;
+    border-radius:9px;
+}
+
+.nav__item:nth-child(1) {
+   background-color: transparent;
+   padding: 0px;
+   padding-left: 70px;
+}
+
+
+.nav__item:nth-child(1):hover {
+   background-color: transparent;
+}
+
+
+
+.nav__item:hover{
+    background-color: #868383;
+}
+
+.link{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    display: grid;
+    grid-template-columns:200px 1fr;
+    grid-template-rows: repeat(5, fr); 
+    gap: 20px;
+}
+
+.aside {
+    background-color: #363636;
+    grid-row-start:1;
+    grid-row-end: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    
+
+}
+
+.link_aside, h3{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.aside_div:nth-child(1){
+    margin-top: 20px;
+}
+
+
+.aside_div {
+    width: 180px;
+    height: 40px;
+    background-color: #868383;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.aside_div:hover {
+    background-color: #696363;
+}
+
+.texto__main {
+    color: white;
+}
+
+.h2__section {
+    color: white;
+}
+.sobre_mi {
+    grid-column-start: 2;
+}
+
+.habilidades {
+    grid-column-start: 2;
+    display: flex;
+}
+
+.cajas {
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    background-color: #363636;
+    height: 300px;
+}
+
+#proyectos {
+    grid-column-start: 2;
+    display: flex;
+}
+
+.footer {
+    grid-column-start: 2;
+}
+
+.cajas_proyectos {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #363636;
+    
+}
+
+
+.footer {
+    background-color: #5ea80927;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100px;
+}
